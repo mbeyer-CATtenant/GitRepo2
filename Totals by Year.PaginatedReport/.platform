@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "PaginatedReport",
+    "displayName": "Totals by Year"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eb81b2d2-5509-97ad-40ea-025709d03475"
+  }
+}

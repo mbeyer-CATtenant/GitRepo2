@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "capacity_events",
+    "description": "capacity_events"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "146129bb-3b4d-846d-4c1d-76b416f30fe6"
+  }
+}

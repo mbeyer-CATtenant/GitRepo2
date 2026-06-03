@@ -1,0 +1,11 @@
+expression 'DirectLake - lakehouse_meb_schema' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/59cf439c-55de-44b7-8623-033ac3160d0a/9bfabca3-2775-479a-8442-ebc89b926c99", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: b12cc0a6-8816-4da4-8d2a-73817d61b3c0
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2018].[green_tripdata_2018]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2020].[green_tripdata_2020]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2022].[green_tripdata_2022]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2021].[green_tripdata_2021]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2017].[green_tripdata_2017]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[sys_dq_metrics]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_all].[green_tripdata_all]"}},"objectType":"Table"}]
+

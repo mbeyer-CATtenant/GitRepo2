@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "workspaceevents"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3b9a8af0-9ca8-af53-4af1-87fa911e8074"
+  }
+}

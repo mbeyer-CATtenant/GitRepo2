@@ -1,0 +1,14 @@
+[
+  {
+    "name": "shortcut",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo",
+        "itemId": "15c1a013-552f-42d1-a261-edc5e27c1e29",
+        "workspaceId": "a8b6a84a-991e-4df1-bd3b-3200f07909fb"
+      }
+    }
+  }
+]

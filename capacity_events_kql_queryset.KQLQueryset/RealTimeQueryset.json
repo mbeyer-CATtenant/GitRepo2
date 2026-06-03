@@ -1,0 +1,22 @@
+{
+  "queryset": {
+    "version": "1.0.0",
+    "dataSources": [
+      {
+        "id": "e9a83256-7de5-4a06-9240-611f1abee675",
+        "clusterUri": "",
+        "type": "Fabric",
+        "databaseItemId": "146129bb-3b4d-846d-4c1d-76b416f30fe6",
+        "databaseItemName": "capacity_events"
+      }
+    ],
+    "tabs": [
+      {
+        "id": "fd4ecc49-2008-4955-b134-84ef8d0927e6",
+        "content": "capacity_events\n| mv-expand breakdown = data_capacityUnitUtilizationBreakdown\n| mv-expand breakdown2 = breakdown\n| where tostring(breakdown.WorkloadKind) == \"AI\"\n| extend AI_CU_Consumption = toreal(breakdown.Utilization.Interactive) + toreal(breakdown.Utilization.Background)\n| summarize totalAI_CU_Consumption=sum(AI_CU_Consumption) by data_windowStartTime, data_windowEndTime\n| where totalAI_CU_Consumption > 0",
+        "title": "Explore: capacity_events",
+        "dataSourceId": "e9a83256-7de5-4a06-9240-611f1abee675"
+      }
+    ]
+  }
+}

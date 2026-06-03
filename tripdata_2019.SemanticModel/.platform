@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "tripdata_2019"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "750d4663-fbbd-aced-4a8e-042b76ef875c"
+  }
+}

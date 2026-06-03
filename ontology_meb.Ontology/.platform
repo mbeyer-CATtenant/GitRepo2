@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Ontology",
+    "displayName": "ontology_meb"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "77ac9eec-c2c2-8322-463f-ac6f787c5f06"
+  }
+}

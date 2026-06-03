@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/variables/1.0.0/schema.json",
+  "variables": [
+    {
+      "name": "lakehouse",
+      "note": "",
+      "type": "ItemReference",
+      "value": {
+        "itemId": "a8690695-86f5-4855-b956-3044fc84e7bd",
+        "workspaceId": "59cf439c-55de-44b7-8623-033ac3160d0a"
+      }
+    }
+  ]
+}

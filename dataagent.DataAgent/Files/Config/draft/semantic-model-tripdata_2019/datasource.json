@@ -1,0 +1,210 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "750d4663-fbbd-aced-4a8e-042b76ef875c",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "tripdata_2019",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "d8311fbb-cf18-4720-875f-f9d37c34873a",
+      "is_selected": true,
+      "display_name": "green_tripdata_2019",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "44c3a61e-8f67-4365-b6a0-8401147f01d7",
+          "is_selected": true,
+          "display_name": "congestion_surcharge",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e708eb5d-72ae-4161-b97b-5c9a39cb88e6",
+          "is_selected": true,
+          "display_name": "DOLocationID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "841b6acd-dffc-4ba6-982a-13fd03ac806f",
+          "is_selected": true,
+          "display_name": "ehail_fee",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6b0cd06d-bde7-48ca-92bb-51cfbe8d2cf0",
+          "is_selected": true,
+          "display_name": "extra",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "001eabdf-9500-471a-b40a-749b9db640b4",
+          "is_selected": true,
+          "display_name": "fare_amount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f0ac0d7e-21a7-4c14-93aa-7f238cba9f5c",
+          "is_selected": true,
+          "display_name": "improvement_surcharge",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "98c80604-5392-47fd-b0be-8dfa8b683078",
+          "is_selected": true,
+          "display_name": "lpep_dropoff_datetime",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a9de6c8b-184e-4671-919c-5defe4730379",
+          "is_selected": true,
+          "display_name": "lpep_pickup_datetime",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "36f69cc1-adcc-49a7-93cc-96191fb35ecb",
+          "is_selected": true,
+          "display_name": "mta_tax",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2c16da53-bef4-4e71-a520-3740f51341d3",
+          "is_selected": true,
+          "display_name": "passenger_count",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9f87f5b6-1bbb-4561-ab4b-a6ceb2b7f086",
+          "is_selected": true,
+          "display_name": "payment_type",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "347f7f3b-89b0-4d93-b11a-77a1b1a7736f",
+          "is_selected": true,
+          "display_name": "PULocationID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "89e72658-87db-4f44-a971-4b2d589ab4e6",
+          "is_selected": true,
+          "display_name": "RatecodeID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5ee64240-c483-46fb-9cc6-8e0bbf52ab97",
+          "is_selected": true,
+          "display_name": "source_file",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "63eeded2-6966-40b0-a8dc-3265ec651247",
+          "is_selected": true,
+          "display_name": "store_and_fwd_flag",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9d50c70d-2b9c-4438-b7a2-71771bd83de2",
+          "is_selected": true,
+          "display_name": "tip_amount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "7aed8793-b500-47b5-9190-00087078b863",
+          "is_selected": true,
+          "display_name": "tolls_amount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5308cbff-d412-4ce4-943f-714b2cc1d9d9",
+          "is_selected": true,
+          "display_name": "total_amount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "84e15253-7ee8-4641-93ab-dc4f2917210e",
+          "is_selected": true,
+          "display_name": "trip_distance",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "32e63cdf-6eb7-49b9-81bb-f65d3ed59b72",
+          "is_selected": true,
+          "display_name": "trip_type",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c30dd2db-9f3a-45b0-aa09-e15967eab2b9",
+          "is_selected": true,
+          "display_name": "VendorID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}
