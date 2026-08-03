@@ -1,0 +1,54 @@
+[
+  {
+    "name": "TestRole2",
+    "kind": "Policy",
+    "decisionRules": [
+      {
+        "effect": "Permit",
+        "permission": [
+          {
+            "attributeName": "Path",
+            "attributeValueIncludedIn": [
+              "/Tables/dbo/publicholidays"
+            ]
+          },
+          {
+            "attributeName": "Action",
+            "attributeValueIncludedIn": [
+              "Read"
+            ]
+          }
+        ]
+      }
+    ],
+    "members": {
+      "fabricItemMembers": []
+    }
+  },
+  {
+    "name": "TestRole1",
+    "kind": "Policy",
+    "decisionRules": [
+      {
+        "effect": "Permit",
+        "permission": [
+          {
+            "attributeName": "Path",
+            "attributeValueIncludedIn": [
+              "*"
+            ]
+          },
+          {
+            "attributeName": "Action",
+            "attributeValueIncludedIn": [
+              "Read"
+            ]
+          }
+        ]
+      }
+    ],
+    "members": {
+      "fabricItemMembers": []
+    }
+  }
+]

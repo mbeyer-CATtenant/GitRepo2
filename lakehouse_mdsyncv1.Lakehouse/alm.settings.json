@@ -2,6 +2,10 @@
   "version": "1.0.1",
   "objectTypes": [
     {
+      "name": "DataAccessRoles",
+      "state": "Enabled"
+    },
+    {
       "name": "Shortcuts",
       "state": "Enabled",
       "subObjectTypes": [
@@ -38,10 +42,6 @@
           "state": "Enabled"
         }
       ]
-    },
-    {
-      "name": "DataAccessRoles",
-      "state": "Disabled"
     }
   ]
 }
