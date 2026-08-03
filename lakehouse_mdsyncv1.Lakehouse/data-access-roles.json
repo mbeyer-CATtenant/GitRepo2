@@ -1,5 +1,31 @@
 [
   {
+    "name": "UIRole1",
+    "kind": "Policy",
+    "decisionRules": [
+      {
+        "effect": "Permit",
+        "permission": [
+          {
+            "attributeName": "Path",
+            "attributeValueIncludedIn": [
+              "/Tables/dbo"
+            ]
+          },
+          {
+            "attributeName": "Action",
+            "attributeValueIncludedIn": [
+              "Read"
+            ]
+          }
+        ]
+      }
+    ],
+    "members": {
+      "fabricItemMembers": []
+    }
+  },
+  {
     "name": "TestRole4",
     "kind": "Policy",
     "decisionRules": [
