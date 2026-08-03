@@ -1,31 +1,5 @@
 [
   {
-    "name": "TestRole7",
-    "kind": "Policy",
-    "decisionRules": [
-      {
-        "effect": "Permit",
-        "permission": [
-          {
-            "attributeName": "Path",
-            "attributeValueIncludedIn": [
-              "*"
-            ]
-          },
-          {
-            "attributeName": "Action",
-            "attributeValueIncludedIn": [
-              "Read"
-            ]
-          }
-        ]
-      }
-    ],
-    "members": {
-      "fabricItemMembers": []
-    }
-  },
-  {
     "name": "TestRole6",
     "kind": "Policy",
     "decisionRules": [
