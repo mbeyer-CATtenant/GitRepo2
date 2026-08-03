@@ -1,5 +1,57 @@
 [
   {
+    "name": "UIRole3",
+    "kind": "Policy",
+    "decisionRules": [
+      {
+        "effect": "Permit",
+        "permission": [
+          {
+            "attributeName": "Path",
+            "attributeValueIncludedIn": [
+              "*"
+            ]
+          },
+          {
+            "attributeName": "Action",
+            "attributeValueIncludedIn": [
+              "Read"
+            ]
+          }
+        ]
+      }
+    ],
+    "members": {
+      "fabricItemMembers": []
+    }
+  },
+  {
+    "name": "UIRole2",
+    "kind": "Policy",
+    "decisionRules": [
+      {
+        "effect": "Permit",
+        "permission": [
+          {
+            "attributeName": "Path",
+            "attributeValueIncludedIn": [
+              "*"
+            ]
+          },
+          {
+            "attributeName": "Action",
+            "attributeValueIncludedIn": [
+              "Read"
+            ]
+          }
+        ]
+      }
+    ],
+    "members": {
+      "fabricItemMembers": []
+    }
+  },
+  {
     "name": "TestRole5",
     "kind": "Policy",
     "decisionRules": [
