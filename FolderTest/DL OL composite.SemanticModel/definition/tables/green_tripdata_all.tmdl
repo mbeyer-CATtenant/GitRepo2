@@ -1,0 +1,239 @@
+table green_tripdata_all
+	lineageTag: 797d21ff-d675-4755-8be7-58fba8a4ae87
+	sourceLineageTag: [year_all].[green_tripdata_all]
+
+	column VendorID
+		dataType: int64
+		formatString: 0
+		lineageTag: a61755c8-3daa-4250-8a32-1ff5b8d970d4
+		sourceLineageTag: VendorID
+		summarizeBy: count
+		sourceColumn: VendorID
+
+		annotation SummarizationSetBy = Automatic
+
+	column lpep_pickup_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f6cc4b68-f5e8-45b9-9d20-c193e7e85e09
+		sourceLineageTag: lpep_pickup_datetime
+		summarizeBy: none
+		sourceColumn: lpep_pickup_datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column lpep_dropoff_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3ef6fc41-2d50-460c-9f62-dc6210a837b5
+		sourceLineageTag: lpep_dropoff_datetime
+		summarizeBy: none
+		sourceColumn: lpep_dropoff_datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_and_fwd_flag
+		dataType: string
+		lineageTag: 5a884e74-6239-4b4f-b2a7-267d39d7488d
+		sourceLineageTag: store_and_fwd_flag
+		summarizeBy: none
+		sourceColumn: store_and_fwd_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column RatecodeID
+		dataType: int64
+		formatString: 0
+		lineageTag: c1751f49-4d1c-45ce-868f-1bdd67faeedc
+		sourceLineageTag: RatecodeID
+		summarizeBy: count
+		sourceColumn: RatecodeID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PULocationID
+		dataType: int64
+		formatString: 0
+		lineageTag: 876b5a25-58c0-4ddb-8e98-1e8083a7dfe7
+		sourceLineageTag: PULocationID
+		summarizeBy: count
+		sourceColumn: PULocationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOLocationID
+		dataType: int64
+		formatString: 0
+		lineageTag: 709ffce0-1278-454c-a746-593dc0ad7eb2
+		sourceLineageTag: DOLocationID
+		summarizeBy: count
+		sourceColumn: DOLocationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column passenger_count
+		dataType: int64
+		formatString: 0
+		lineageTag: b728f021-a6aa-4b87-90f1-c41b4f1e7bd2
+		sourceLineageTag: passenger_count
+		summarizeBy: sum
+		sourceColumn: passenger_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_distance
+		dataType: double
+		lineageTag: 7999b9ae-a838-4aab-a987-575c724081c5
+		sourceLineageTag: trip_distance
+		summarizeBy: sum
+		sourceColumn: trip_distance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fare_amount
+		dataType: double
+		lineageTag: 819b5d8f-d2c3-4a23-8265-52d2b3c2a888
+		sourceLineageTag: fare_amount
+		summarizeBy: sum
+		sourceColumn: fare_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column extra
+		dataType: double
+		lineageTag: 409711bd-4bce-4c5e-83d6-c58eaa9e4da5
+		sourceLineageTag: extra
+		summarizeBy: sum
+		sourceColumn: extra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mta_tax
+		dataType: double
+		lineageTag: 0c7b1f74-6fbe-4a8d-bca9-7aae96f76923
+		sourceLineageTag: mta_tax
+		summarizeBy: sum
+		sourceColumn: mta_tax
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tip_amount
+		dataType: double
+		lineageTag: eb98696a-b5ed-4859-a571-2a7aea1d9903
+		sourceLineageTag: tip_amount
+		summarizeBy: sum
+		sourceColumn: tip_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tolls_amount
+		dataType: double
+		lineageTag: be4059b5-2a9b-4a42-b880-55c10591c340
+		sourceLineageTag: tolls_amount
+		summarizeBy: sum
+		sourceColumn: tolls_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ehail_fee
+		dataType: double
+		lineageTag: 5175b260-eca3-4ea9-863f-547e34dd7cd8
+		sourceLineageTag: ehail_fee
+		summarizeBy: sum
+		sourceColumn: ehail_fee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column improvement_surcharge
+		dataType: double
+		lineageTag: f1bbd50b-d4c2-467e-a3e1-0183c6f2b32f
+		sourceLineageTag: improvement_surcharge
+		summarizeBy: sum
+		sourceColumn: improvement_surcharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_amount
+		dataType: double
+		lineageTag: a5204077-7a3b-4db5-8e6d-789690bf0170
+		sourceLineageTag: total_amount
+		summarizeBy: sum
+		sourceColumn: total_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column payment_type
+		dataType: int64
+		formatString: 0
+		lineageTag: cdfc4d18-d832-46e4-a54c-48c9af39f3fc
+		sourceLineageTag: payment_type
+		summarizeBy: sum
+		sourceColumn: payment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_type
+		dataType: int64
+		formatString: 0
+		lineageTag: b0ffc1ef-a0c8-4dea-9179-3b6170c191dd
+		sourceLineageTag: trip_type
+		summarizeBy: sum
+		sourceColumn: trip_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column congestion_surcharge
+		dataType: double
+		lineageTag: c85019ad-5f25-4a31-b915-0ea38d2328ad
+		sourceLineageTag: congestion_surcharge
+		summarizeBy: sum
+		sourceColumn: congestion_surcharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column source_file
+		dataType: string
+		lineageTag: 00449cc4-2bef-4696-8ca7-9c4fba2ae34c
+		sourceLineageTag: source_file
+		summarizeBy: none
+		sourceColumn: source_file
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 1dc1862f-fdf3-4a07-be3e-e32ee97baf1b
+		sourceLineageTag: year
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition green_tripdata_all = entity
+		mode: directLake
+		source
+			entityName: green_tripdata_all
+			schemaName: year_all
+			expressionSource: 'DirectLake - lakehouse_meb_schema'
+

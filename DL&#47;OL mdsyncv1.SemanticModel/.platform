@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "DL/OL mdsyncv1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "448008d4-c5d3-b2aa-48eb-37dcd2f7dbad"
+  }
+}

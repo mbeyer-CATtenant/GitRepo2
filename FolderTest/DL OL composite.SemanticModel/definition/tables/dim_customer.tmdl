@@ -1,0 +1,84 @@
+table dim_customer
+	lineageTag: 748d6820-8238-4fda-905b-8f5eaf8c7b13
+	sourceLineageTag: [dbo].[dim_customer]
+
+	column CustomerID
+		dataType: int64
+		formatString: 0
+		lineageTag: 3ada2c56-e3dd-46a1-8a5f-01fa7838d066
+		sourceLineageTag: CustomerID
+		summarizeBy: count
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: e9a882b3-4881-49a7-a05f-c057752bf098
+		sourceLineageTag: Name
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: 4623da12-51c4-4ca2-9e95-48970dcb42a3
+		sourceLineageTag: Email
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		lineageTag: 229d73ec-22f4-4366-9c68-f347421d8585
+		sourceLineageTag: Phone
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column Segment
+		dataType: string
+		lineageTag: 200403b4-6338-4e19-9f77-d0603193780f
+		sourceLineageTag: Segment
+		summarizeBy: none
+		sourceColumn: Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 86dc26fc-bbcd-4c54-8d96-e152802716a5
+		sourceLineageTag: Region
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column JoinDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f4032972-6b71-4cae-9f6d-37fcbf12d358
+		sourceLineageTag: JoinDate
+		summarizeBy: none
+		sourceColumn: JoinDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: e659ef91-4f0a-466b-a3e4-956555e9e6b8
+		sourceLineageTag: Status
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_customer = entity
+		mode: directLake
+		source
+			entityName: dim_customer
+			expressionSource: 'DirectLake - enterprise_lakehouse'
+

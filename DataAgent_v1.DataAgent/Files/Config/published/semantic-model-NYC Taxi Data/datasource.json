@@ -1,0 +1,219 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "4e0577e9-e2a9-a002-4e6a-909a3229ce72",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "NYC Taxi Data",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "92f77bf1-5db6-4d68-b44e-9cb9f81c3fa8",
+      "is_selected": true,
+      "display_name": "green_tripdata_all",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "d21513c1-3056-4da7-aac2-82c16e4f330d",
+          "is_selected": true,
+          "display_name": "VendorID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "be44ed9e-66a6-4abf-926a-b118352893a0",
+          "is_selected": true,
+          "display_name": "lpep_pickup_datetime",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "375adde3-501c-4d93-aeb0-2a64bdde435f",
+          "is_selected": true,
+          "display_name": "lpep_dropoff_datetime",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f2ea27df-7f5e-426e-9138-9b17d555a7b3",
+          "is_selected": true,
+          "display_name": "store_and_fwd_flag",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e99999f8-194b-4fcb-b9f5-cf599bee3dc9",
+          "is_selected": true,
+          "display_name": "RatecodeID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6b209b12-be0a-4938-8e2b-4a88862ef7dd",
+          "is_selected": true,
+          "display_name": "PULocationID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1845cdc1-5343-4cbb-8b1c-0672f9d1e89b",
+          "is_selected": true,
+          "display_name": "DOLocationID",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b2f1c3ed-fe7c-43f5-b9cb-c8dfe2cc5ab9",
+          "is_selected": true,
+          "display_name": "passenger_count",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "eb85706d-e4ea-4512-b35c-833cd8bf37c8",
+          "is_selected": true,
+          "display_name": "trip_distance",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0f241b52-0641-4ce1-a18a-f19d32ba8e24",
+          "is_selected": true,
+          "display_name": "fare_amount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a22f6038-083f-46b4-b530-7ed85a8ff641",
+          "is_selected": true,
+          "display_name": "extra",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "af6db191-bbb5-4166-adef-c99e42e7c213",
+          "is_selected": true,
+          "display_name": "mta_tax",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c7243f9d-e05a-47e4-afdd-3511e2a3dc91",
+          "is_selected": true,
+          "display_name": "tip_amount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "495a70f1-cb68-4dac-afa7-279fd7bdd50f",
+          "is_selected": true,
+          "display_name": "tolls_amount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2c2f6c8d-ce76-43f2-88c4-925fb2014d58",
+          "is_selected": true,
+          "display_name": "ehail_fee",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a79ee1f6-3b6c-4377-b1a9-b62eb853f160",
+          "is_selected": true,
+          "display_name": "improvement_surcharge",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b0e22ee6-9056-4aca-9e05-1adbe1fb1854",
+          "is_selected": true,
+          "display_name": "total_amount",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8ccb75eb-ef2a-47ec-a8fb-b2d909b075b0",
+          "is_selected": true,
+          "display_name": "payment_type",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6e14688b-af8a-4e07-a812-ac794fede157",
+          "is_selected": true,
+          "display_name": "trip_type",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c7fb8642-2b86-4dae-9551-8848397e5ce8",
+          "is_selected": true,
+          "display_name": "congestion_surcharge",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3a09544f-891a-478b-8416-dddfa5c4f674",
+          "is_selected": true,
+          "display_name": "source_file",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8a0c116b-5887-4ef8-8c3b-5e93fcd9cc2a",
+          "is_selected": true,
+          "display_name": "year",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

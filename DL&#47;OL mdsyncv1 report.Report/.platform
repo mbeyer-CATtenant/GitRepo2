@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "DL/OL mdsyncv1 report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f2f814a8-6fe8-a41e-489b-13ad03d78556"
+  }
+}

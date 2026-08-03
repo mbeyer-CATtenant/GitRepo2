@@ -1,0 +1,78 @@
+table fact_support_tickets
+	lineageTag: 000d6cd0-bf9d-4748-9877-a2814d6813bf
+	sourceLineageTag: [dbo].[fact_support_tickets]
+
+	column TicketID
+		dataType: int64
+		formatString: 0
+		lineageTag: 18392f4c-7522-4d85-986f-593ee7757201
+		sourceLineageTag: TicketID
+		summarizeBy: count
+		sourceColumn: TicketID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerID
+		dataType: int64
+		formatString: 0
+		lineageTag: 38b0db0e-eee2-4b8e-b46c-62f536fb6708
+		sourceLineageTag: CustomerID
+		summarizeBy: count
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: dc5e43fe-7f52-4643-b48b-6f80ecda6c80
+		sourceLineageTag: DateKey
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: f25952ef-75cf-4c92-af4e-af93b7432c9b
+		sourceLineageTag: Category
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Priority
+		dataType: string
+		lineageTag: 873be161-8033-4146-8f61-c71020bbd3e5
+		sourceLineageTag: Priority
+		summarizeBy: none
+		sourceColumn: Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: a797f37c-b4fb-4fca-979a-efd78ccf2661
+		sourceLineageTag: Status
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResolutionHours
+		dataType: double
+		lineageTag: c2d4bf8d-e88b-4d09-a59a-f8c1a502cc5a
+		sourceLineageTag: ResolutionHours
+		summarizeBy: sum
+		sourceColumn: ResolutionHours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fact_support_tickets = entity
+		mode: directLake
+		source
+			entityName: fact_support_tickets
+			expressionSource: 'DirectLake - enterprise_lakehouse'
+

@@ -1,0 +1,22 @@
+expression 'DirectLake - lakehouse_meb_schema' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/59cf439c-55de-44b7-8623-033ac3160d0a/9bfabca3-2775-479a-8442-ebc89b926c99", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 1b68b32f-d82c-406e-9647-caac31b70162
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[shortcut].[publicholidays]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2018].[green_tripdata_2018]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2019].[green_tripdata_2019]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2020].[green_tripdata_2020]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2022].[green_tripdata_2022]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2021].[green_tripdata_2021]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2017].[green_tripdata_2017]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[sys_dq_metrics]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[year_2022].[mlv_2022]"}},"objectType":"Table"}]
+
+expression 'DirectLake - enterprise_lakehouse' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/3ff7ec00-ab4b-4c2f-b6c3-e6fd0b0b5bc0/97c14fb2-4d68-4299-8127-6210adcd2e3d", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: d8eaea1e-1492-4e28-83a5-a1a65a9b4fe0
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[fact_billing]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[dim_region]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[fact_subscriptions]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[dim_product]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[fact_network_usage]"}},"objectType":"Table"}]
+

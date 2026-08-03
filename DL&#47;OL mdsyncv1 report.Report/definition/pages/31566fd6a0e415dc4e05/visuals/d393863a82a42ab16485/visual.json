@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "d393863a82a42ab16485",
+  "position": {
+    "x": 458.10031232776049,
+    "y": 144.86128972992836,
+    "z": 0,
+    "height": 300,
+    "width": 300
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "publicholidays"
+                    }
+                  },
+                  "Property": "holidayName"
+                }
+              },
+              "queryRef": "publicholidays.holidayName",
+              "nativeQueryRef": "holidayName"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2048024b9c40686ecaa2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "publicholidays"
+              }
+            },
+            "Property": "holidayName"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

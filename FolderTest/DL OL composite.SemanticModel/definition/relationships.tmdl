@@ -1,0 +1,8 @@
+relationship 703a218e-f72d-717d-aeee-ea2903f6777e
+	fromColumn: fact_support_tickets.DateKey
+	toColumn: dim_date.DateKey
+
+relationship a0696b64-bc6a-c019-e79b-f2c45e72369e
+	fromColumn: green_tripdata_all.lpep_pickup_datetime
+	toColumn: dim_date.Date
+
