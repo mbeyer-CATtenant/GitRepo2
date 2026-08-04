@@ -13,4 +13,5 @@ annotation PBI_QueryOrder = ["DirectLake - lakehouse_mdsyncv1"]
 annotation PBI_ProTooling = ["DirectLakeOnOneLakeInWeb"]
 
 ref table publicholidays
+ref table green_tripdata_all
 

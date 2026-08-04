@@ -1,0 +1,239 @@
+table green_tripdata_all
+	lineageTag: cf039694-7461-4be5-b5ba-58e170cf5e92
+	sourceLineageTag: [dbo].[green_tripdata_all]
+
+	column VendorID
+		dataType: int64
+		formatString: 0
+		lineageTag: 71917ce9-13a9-4795-8f6a-63d7754b2206
+		sourceLineageTag: VendorID
+		summarizeBy: count
+		sourceColumn: VendorID
+
+		annotation SummarizationSetBy = Automatic
+
+	column lpep_pickup_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 64ee6911-54fb-40bd-b32e-a14a45de2031
+		sourceLineageTag: lpep_pickup_datetime
+		summarizeBy: none
+		sourceColumn: lpep_pickup_datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column lpep_dropoff_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 90d5ea39-a2cb-42c7-a82d-5d5a8c6b4fba
+		sourceLineageTag: lpep_dropoff_datetime
+		summarizeBy: none
+		sourceColumn: lpep_dropoff_datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_and_fwd_flag
+		dataType: string
+		lineageTag: 5c749cad-33d0-41c7-a97c-f3f1b4d0c987
+		sourceLineageTag: store_and_fwd_flag
+		summarizeBy: none
+		sourceColumn: store_and_fwd_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column RatecodeID
+		dataType: int64
+		formatString: 0
+		lineageTag: 8a0c7f90-9a93-4097-ae53-dae327081856
+		sourceLineageTag: RatecodeID
+		summarizeBy: count
+		sourceColumn: RatecodeID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PULocationID
+		dataType: int64
+		formatString: 0
+		lineageTag: 8284150c-1f34-4732-8b73-a782dc7eb724
+		sourceLineageTag: PULocationID
+		summarizeBy: count
+		sourceColumn: PULocationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOLocationID
+		dataType: int64
+		formatString: 0
+		lineageTag: b8fd4dd8-2377-4dbf-b427-1c36ec380756
+		sourceLineageTag: DOLocationID
+		summarizeBy: count
+		sourceColumn: DOLocationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column passenger_count
+		dataType: int64
+		formatString: 0
+		lineageTag: af08a329-bebc-4f3c-8988-efd4dd98ed20
+		sourceLineageTag: passenger_count
+		summarizeBy: sum
+		sourceColumn: passenger_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_distance
+		dataType: double
+		lineageTag: 2a81c848-565e-44d1-9c3a-26abcef59271
+		sourceLineageTag: trip_distance
+		summarizeBy: sum
+		sourceColumn: trip_distance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fare_amount
+		dataType: double
+		lineageTag: 4f9b39b5-fbb7-4b2a-9c00-6c836e440aa8
+		sourceLineageTag: fare_amount
+		summarizeBy: sum
+		sourceColumn: fare_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column extra
+		dataType: double
+		lineageTag: 5f506023-70e4-4629-9296-8bfd028984f7
+		sourceLineageTag: extra
+		summarizeBy: sum
+		sourceColumn: extra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mta_tax
+		dataType: double
+		lineageTag: 6a1ead92-c672-4948-a97d-fd191e21fbc5
+		sourceLineageTag: mta_tax
+		summarizeBy: sum
+		sourceColumn: mta_tax
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tip_amount
+		dataType: double
+		lineageTag: a9e07ac6-79f7-41cf-99b0-a8b9d4de7050
+		sourceLineageTag: tip_amount
+		summarizeBy: sum
+		sourceColumn: tip_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tolls_amount
+		dataType: double
+		lineageTag: a1914a32-3ac7-4505-84c7-3aadf81efa18
+		sourceLineageTag: tolls_amount
+		summarizeBy: sum
+		sourceColumn: tolls_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ehail_fee
+		dataType: double
+		lineageTag: aed02b24-1f4c-44a1-92e3-7efa37d26bc4
+		sourceLineageTag: ehail_fee
+		summarizeBy: sum
+		sourceColumn: ehail_fee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column improvement_surcharge
+		dataType: double
+		lineageTag: 1340e680-2f72-455d-97b4-112fe4e1ce54
+		sourceLineageTag: improvement_surcharge
+		summarizeBy: sum
+		sourceColumn: improvement_surcharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_amount
+		dataType: double
+		lineageTag: d20efaac-56e5-4443-adf4-c3382ceac1aa
+		sourceLineageTag: total_amount
+		summarizeBy: sum
+		sourceColumn: total_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column payment_type
+		dataType: int64
+		formatString: 0
+		lineageTag: f97594ba-da54-43d2-9ee7-8db7f6fdffd3
+		sourceLineageTag: payment_type
+		summarizeBy: sum
+		sourceColumn: payment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_type
+		dataType: int64
+		formatString: 0
+		lineageTag: bfcc5d41-fc01-4dcd-bebf-2697fb609605
+		sourceLineageTag: trip_type
+		summarizeBy: sum
+		sourceColumn: trip_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column congestion_surcharge
+		dataType: double
+		lineageTag: e1ebec6d-4e3a-4835-a424-0ec37dee9018
+		sourceLineageTag: congestion_surcharge
+		summarizeBy: sum
+		sourceColumn: congestion_surcharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column source_file
+		dataType: string
+		lineageTag: 2c43d0fd-f7fa-491d-874c-6c47e52e2922
+		sourceLineageTag: source_file
+		summarizeBy: none
+		sourceColumn: source_file
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 35e5040b-3f4c-4d2c-bb23-d5bd5bb649ac
+		sourceLineageTag: year
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition green_tripdata_all = entity
+		mode: directLake
+		source
+			entityName: green_tripdata_all
+			schemaName: dbo
+			expressionSource: 'DirectLake - lakehouse_mdsyncv1'
+
