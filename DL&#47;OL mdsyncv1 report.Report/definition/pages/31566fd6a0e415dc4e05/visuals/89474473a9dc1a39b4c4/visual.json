@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "89474473a9dc1a39b4c4",
+  "position": {
+    "x": 883.83609415867477,
+    "y": 107.13164777680906,
+    "z": 3,
+    "height": 359.33740191804708,
+    "width": 300.19180470793373,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "aiNarratives",
+    "objects": {
+      "narrativeSelection": [
+        {
+          "properties": {
+            "dismissSelectionScreen": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
