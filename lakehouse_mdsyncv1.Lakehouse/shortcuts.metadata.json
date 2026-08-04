@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "name": "green_tripdata_all",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/year_all/green_tripdata_all",
+        "itemId": "9b926c99-ebc8-8442-479a-27759bfabca3",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  }
+]
